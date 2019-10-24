@@ -28,6 +28,7 @@ tf.app.flags.DEFINE_boolean('restore', False, 'set whether restore from file')
 
 FLAGS = tf.app.flags.FLAGS
 
+
 os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
 os.environ['CUDA_VISIBLE_DEVICES'] = FLAGS.gpu
 logger = logging.getLogger(__name__)
